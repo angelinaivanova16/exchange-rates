@@ -1,11 +1,13 @@
-import './App.css'
+import s from './App.module.css';
+import { ExchangeRates, Header } from './components'
 
 function App() {
 
   return (
-    <>
-      Exchange rates
-    </>
+    <div className={s.mainContainer}>
+      <Header />
+      <ExchangeRates />
+    </div>
   )
 }
 
